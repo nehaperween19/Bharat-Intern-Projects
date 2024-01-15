@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Neha's MoneyTracker</title>
+</head>
+<body>
+    <h1>NEHA'S MONEY TRACKER WEBAPP</h1>
+    <div class="input-section">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+        <option value="Hostel fee">Hostel Fee</option>
+        <option value="College fee">College Fee</option>
+        <option value="Mess Fee">Mess Fee</option>
+        <option value="Clothing expenses">Clothng expenses</option>
+        <option value="Footwear expenses">Footwear expenses</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Transport">Transport</option>
+        <option value="Laundary">College Fee</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+<button id="add-btn">Add Info</button>
+
+    </div>
+
+    <div class="expenses-list">
+        <h2>EXPENSES LIST</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>CATEGORY</th>
+                    <th>AMOUNT</th>
+                    <th>DATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table"></tbody>
+            <tfoot>
+                <td>TOTAL</td>
+                <td id="total-amount"></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+    <footer>Created by Neha Perween | Bharat Intern | Full Stack Developer Internship 2024</footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
